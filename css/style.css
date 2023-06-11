@@ -1,0 +1,15 @@
+/**** FLUX ***/
+.flux {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+}
+
