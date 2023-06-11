@@ -9,13 +9,15 @@
 /*** VARIABLE ***/
 :root {
   --main-p-color: #F2F2F2;
-  --main-title-color: #D92332:
+  --main-title-color: #D92332;
 }
 
 /*** BODY ***/
 body {
-    font-family: 'Roboto', sans-serif;
-    background-image: url("/assets/bgVoiture.jpg");
+  font-family: 'Roboto', sans-serif;
+  background-image: url("/assets/bgVoiture.jpg");
+  background-position-x: 50%;
+  background-position-y: 0%;
 }
 
 
@@ -24,7 +26,31 @@ body {
   color: var(--main-p-color);
 }
 
+.section h1 {
+  color: var(--main-title-color);
+}
+
 /** FOOTER ***/
+.form {
+  display: block;
+  font-size: 0.8em;
+}
 
+.form input, textarea{
+  background: rgba(255, 255, 255, 0.1);
+  /* width: 100%; */
+  border: 1px solid white;
+  margin: 5px;
+}
 
+input:focus{
+  background-color: white;
+}
 
+/*** MEDIA QUERY ***/
+@media screen and (min-width: 586px){
+  body {
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+  }
+}
