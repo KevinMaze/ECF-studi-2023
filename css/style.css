@@ -15,9 +15,10 @@
 /*** BODY ***/
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: url("/assets/bgVoiture.jpg");
+  background-color: rgb(80, 71, 58);
+  /* background-image: url("/assets/bgVoiture.jpg");
   background-position-x: 50%;
-  background-position-y: 0%;
+  background-position-y: 0%; */
 }
 
 
