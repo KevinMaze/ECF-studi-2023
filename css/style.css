@@ -1,57 +1,109 @@
-/**** FLUX ***/
-.flux {
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /*** VARIABLE ***/
 :root {
   --main-p-color: #F2F2F2;
   --main-title-color: #D92332;
+  --main-link-color: #D9777F;
+  --main-other-color:#5e1e23;
+
+  --main-font-p: 'Ubuntu', sans-serif;
+  --main-font-title: 'Roboto', sans-serif;
+}
+
+/***BUTTON***/
+.button-custom{
+  border-radius: 10px;
+  background-color: var(--main-other-color);
+  width: 10em;
+  color: var(--main-p-color);
+}
+
+.button-custom:hover{
+  background-color: var(--main-p-color);
+  color: var(--main-other-color);
+  font-weight: bold;
+  transition: 0.5s ease-in;
 }
 
 /*** BODY ***/
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: rgb(80, 71, 58);
-  /* background-image: url("/assets/bgVoiture.jpg");
+  font-family: var(--main-font-title);
+  background-image: url('../assets/bgVoiture.jpg');
   background-position-x: 50%;
-  background-position-y: 0%; */
+  background-position-y: 0%;
+  background-attachment: fixed;
 }
 
+a {
+  color: var(--main-link-color);
+}
+
+.backg-opacity{
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*** HEADER ***/
+nav img{
+  border-radius: 10px;
+  width: 10em;
+}
 
 /*** SECTION ***/
-.section {
+.section__div {
   color: var(--main-p-color);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.section h1 {
+section h1 {
   color: var(--main-title-color);
+  font-family: var(--main-font-title);
+}
+
+.section_para{
+  font-family: var(--main-font-p);
+  line-height: 1.5em;
+  font-size: 1.1em;
 }
 
 /** FOOTER ***/
-.form {
-  display: block;
+.footer{
+  margin: auto;
+}
+
+.footer h6{
+  text-align: center;
+  text-decoration: underline;
+  color: var(--main-title-color);
+  font-family: var(--main-font-title);
+}
+
+li{
   font-size: 0.8em;
-}
-
-.form input, textarea{
-  background: rgba(255, 255, 255, 0.1);
-  /* width: 100%; */
-  border: 1px solid white;
-  margin: 5px;
-}
-
-input:focus{
-  background-color: white;
+  font-family: var(--main-font-p);
+  color: var(--main-p-color);
 }
 
 /*** MEDIA QUERY ***/
-@media screen and (min-width: 586px){
-  body {
-    background-repeat: no-repeat;
-    /* background-size: cover; */
+@media screen and (min-width: 700px) {
+  .section_para{
+    font-size: 1.6em;
   }
+
+  li{
+    font-size: 1.1em;
+  }
+  
+}
+
+@media screen and (min-width: 1200px){
+  .flux {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
