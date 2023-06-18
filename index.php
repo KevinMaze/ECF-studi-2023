@@ -16,7 +16,37 @@
 
         </section>
 
-        <!-- voir accordion hover -->
+
+        <section class="carrousel flux">
+
+            <div class="card m-2" style="width: 18rem;">
+                <img src="upload/clio.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">CLIO</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <a href="#" class="button-custom">Annonce</a>
+            </div>
+
+            <div class="card m-2" style="width: 18rem;">
+                <img src="upload/clio.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">CLIO</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <a href="#" class="button-custom">Annonce</a>
+            </div>
+
+            <div class="card m-2" style="width: 18rem;">
+                <img src="upload/clio.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">CLIO</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <a href="#" class="button-custom">Annonce</a>
+            </div>
+
+        </section>
 
 
 <?php require_once "templates/footer.html" ?>
