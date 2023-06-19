@@ -11,7 +11,7 @@
   --main-font-title: 'Roboto', sans-serif;
 }
 
-/***BUTTON***/
+/***BUTTON GENERAL***/
 .button-custom{
   border-radius: 10px;
   background-color: var(--main-other-color);
@@ -28,7 +28,7 @@
   transition: 0.5s ease-in;
 }
 
-/*** BODY ***/
+/*** BODY GENERAL ***/
 body {
   font-family: var(--main-font-title);
   background-image: url('../assets/bgVoiture.jpg');
@@ -55,7 +55,7 @@ nav img{
   width: 10em;
 }
 
-/*** SECTION ***/
+/*** SECTION INDEX ***/
 .section__div {
   color: var(--main-p-color);
   margin-top: 40px;
@@ -65,7 +65,7 @@ nav img{
   padding-right: 10px;
 }
 
-section h1 {
+section h1, h2{
   color: var(--main-title-color);
   font-family: var(--main-font-title);
 }
@@ -76,7 +76,24 @@ section h1 {
   font-size: 1.1em;
 }
 
-/*** CARROUSEL ***/
+.section__service__p {
+  margin-top: 1em;
+  font-family: var(--main-font-p);
+}
+
+.section__service__img{
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/*** OCCASION.PHP ***/
+.title-occasion{
+  color: var(--main-title-color);
+  font-family: var(--main-font-title);
+  margin-top: 1em;
+}
+
+/*** CARROUSEL INDEX ***/
 .carrousel{
   display: flex;
   flex-direction: column;
@@ -130,6 +147,10 @@ footer li{
   }
   .carrousel{
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .section__card__decoration{
+    flex-grow: 1;
   }
 }
 

@@ -1,5 +1,7 @@
 <?php
-require_once('lib/config.php');
+    require_once('lib/config.php');
+
+    $currentPage = basename($_SERVER['SCRIPT_NAME']);
 ?>
 
 <!DOCTYPE html>
@@ -34,18 +36,9 @@ require_once('lib/config.php');
                 
                         <div class="navbar-collapse collapse" id="navbarsExample09">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item m-2">
-                                    <a class=" active" aria-current="page" href="#">Accueil</a>
-                                </li>
-                                <li class="nav-item m-2">
-                                    <a class="" href="#">Voitures Occasions</a>
-                                </li>
-                                <li class="nav-item m-2">
-                                    <a class="" href="#">Services</a>
-                                </li>
-                                <li class="nav-item m-2">
-                                    <a class="" href="#">Contact</a>
-                                </li>
+                                <?php foreach ($mainMenu as $key => $value) { ?>
+                                    <li class="nav-item m-2"><a href=<?= $key ?> class="<?php if ($currentPage == $key){echo 'active';}?>"><?= $value ?></a></li>
+                                <?php } ?>
                                 <button type="button" class="button-custom m-1">Connection</button>
                             </ul>
                         </div>

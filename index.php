@@ -19,6 +19,61 @@ require_once ("lib/car.php");
                 </p> 
             </div>
 
+        </section class="flux">
+            <div class="section__div backg-opacity">
+                <h2>Nos services</h2>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg">
+                            <img src="assets/vidange.jpg" alt="vidange" class="section__service__img">
+                            <p class="section__service__p">Révision et vidange</p>
+                        </div>
+                        <div class="col-lg">
+                            <img src="assets/pneu.jpg" alt="vidange" class="section__service__img">
+                            <p class="section__service__p">Pneus</p>
+                        </div>
+                        <div class="col-lg">
+                            <img src="assets/frein.jpg" alt="vidange" class="section__service__img">
+                            <p class="section__service__p">Freinage</p>
+                        </div>
+                        <div class="col-lg">
+                            <img src="assets/pneu.jpg" alt="vidange" class="section__service__img">
+                            <p class="section__service__p">Pneus</p>
+                        </div>
+                        <div class="col-lg">
+                            <img src="assets/pneu.jpg" alt="vidange" class="section__service__img">
+                            <p class="section__service__p">Pneus</p>
+                        </div>
+                        <div class="col-lg">
+                            <img src="assets/pneu.jpg" alt="vidange" class="section__service__img">
+                            <p class="section__service__p">Pneus</p>
+                        </div>
+                        <div class="col-lg">
+                            <img src="assets/pneu.jpg" alt="vidange" class="section__service__img">
+                            <p class="section__service__p">Pneus</p>
+                        </div>
+                        <div class="col-lg">
+                            <img src="assets/pneu.jpg" alt="vidange" class="section__service__img">
+                            <p class="section__service__p">Pneus</p>
+                        </div>
+                        <div class="col-lg">
+                            <img src="assets/pneu.jpg" alt="vidange" class="section__service__img">
+                            <p class="section__service__p">Pneus</p>
+                        </div>
+                        <div class="col-lg">
+                            <img src="assets/pneu.jpg" alt="vidange" class="section__service__img">
+                            <p class="section__service__p">Pneus</p>
+                        </div>
+                        <div class="col-lg">
+                            <img src="assets/pneu.jpg" alt="vidange" class="section__service__img">
+                            <p class="section__service__p">Pneus</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        <section>
+
         </section>
 
 
