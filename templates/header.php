@@ -1,3 +1,7 @@
+<?php
+require_once('lib/config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -30,19 +34,19 @@
                 
                         <div class="navbar-collapse collapse" id="navbarsExample09">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="m-3 active" aria-current="page" href="#">Accueil</a>
+                                <li class="nav-item m-2">
+                                    <a class=" active" aria-current="page" href="#">Accueil</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="m-3" href="#">Voitures Occasions</a>
+                                <li class="nav-item m-2">
+                                    <a class="" href="#">Voitures Occasions</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="m-3" href="#">Services</a>
+                                <li class="nav-item m-2">
+                                    <a class="" href="#">Services</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="m-3" href="#">Contact</a>
+                                <li class="nav-item m-2">
+                                    <a class="" href="#">Contact</a>
                                 </li>
-                                <button type="button" class="button-custom">Connection</button>
+                                <button type="button" class="button-custom m-1">Connection</button>
                             </ul>
                         </div>
                     </div>
@@ -50,3 +54,4 @@
             </header>
 
                 
+

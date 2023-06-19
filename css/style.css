@@ -1,10 +1,12 @@
 /*** VARIABLE ***/
 :root {
+  /**COLOR**/
   --main-p-color: #F2F2F2;
   --main-title-color: #D92332;
   --main-link-color: #D9777F;
   --main-other-color:#5e1e23;
-
+  --other-color: #262526;
+  /**FONT**/
   --main-font-p: 'Ubuntu', sans-serif;
   --main-font-title: 'Roboto', sans-serif;
 }
@@ -40,6 +42,7 @@ body {
 
 a {
   color: var(--main-link-color);
+  font-weight: bold;
 }
 
 .backg-opacity{
@@ -82,7 +85,14 @@ section h1 {
   margin: 1em;
 }
 
-/** FOOTER ***/
+/*** SECTION CARD ***/
+.section__card__decoration{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+
+/*** FOOTER ***/
 .footer{
   margin: auto;
   flex-grow: 1;

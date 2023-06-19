@@ -8,7 +8,7 @@
                 <ol>dim. : Fermé</ol>
             </li>
         </div>
-
+        
         <div class="test">
             <h6>Nous contacter</h6>
             <li>
@@ -18,7 +18,7 @@
                 <ul><a href="#">Formulaire</a></ul>
             </li> 
         </div>
-
+        
         <div class="test">
             <h6>Autres liens</h6>
             <li>
@@ -27,12 +27,10 @@
                 <ul><a href="#">Véhicules occasions</a></ul>
                 <ul><a href="#">Contact</a></ul>
                 <ul><a href="#">Avis</a></ul>
-                <ul>&copy; Vincent Parrot</ul>
-
             </li>
+            <p class="text-light m-auto align-middle">&copy; Vincent Parrot</p>
         </div>
         
-
     </footer>
 
 
