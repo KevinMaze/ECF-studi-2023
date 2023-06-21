@@ -23,9 +23,9 @@
             <h6>Autres liens</h6>
             <li>
                 <ul><a href="#">Condictions général d'utilisation</a></ul>
-                <ul><a href="#">Services</a></ul>
-                <ul><a href="#">Véhicules occasions</a></ul>
-                <ul><a href="#">Contact</a></ul>
+                <ul><a href="index.php#services">Services</a></ul>
+                <ul><a href="occasion.php">Véhicules occasions</a></ul>
+                <ul><a href="contact.php">Contact</a></ul>
                 <ul><a href="#">Avis</a></ul>
             </li>
             <p class="text-light m-auto align-middle">&copy; Vincent Parrot</p>
