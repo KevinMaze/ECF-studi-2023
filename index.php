@@ -40,8 +40,8 @@ require_once ("lib/services.php");
 
         </section>
 
-        <section class="carrousel flux backg-opacity">
-
+        <section class="carrousel flux backg-opacity" id="carrousel">
+            
             <?php foreach ($cars as $key => $car) {
 
                 include ('templates/car-partial.php');
