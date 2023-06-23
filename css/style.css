@@ -126,8 +126,6 @@ section h1, h2{
 .section__service__img{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   width: 100%;
-  filter: grayscale(100%);
-  transition: 1s;
 }
 
 .section__service__img:hover{
@@ -187,6 +185,14 @@ footer li{
 @media screen and (min-width: 700px) {
   .section_para{
     font-size: 1.6em;
+  }
+  .section__service__img{
+    filter: grayscale(100%);
+    transition: 1s;
+  }
+
+  .section__service__img:hover{
+    filter: grayscale(10%);
   }
 
   li{

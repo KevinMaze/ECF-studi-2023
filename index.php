@@ -7,7 +7,7 @@ require_once ("lib/services.php");
 
 ?>
 
-        <section class="flux">
+        <section class="flux pb-2 pt-2">
             <div class="section__div">
                 <h1>Garage Vincent Parrot</h1>
 
@@ -42,7 +42,7 @@ require_once ("lib/services.php");
 
         <section class="flux pb-3">
 
-            <h2>Dernières sélection</h2>
+            <h2 class="pb-2">Dernières sélection</h2>
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
