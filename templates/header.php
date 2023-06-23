@@ -24,27 +24,26 @@
     </head>
     <body class="background">
 
-        <div>
-            <header>
-                
-                <nav class="navbar navbar-expand-lg backg-opacity">
-                    <div class="container-fluid">
-                        <img src="assets/logo.png" alt="logo du garage">
-                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                
-                        <div class="navbar-collapse collapse" id="navbarsExample09">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <?php foreach ($mainMenu as $key => $value) { ?>
-                                    <li class="nav-item m-2"><a href=<?= $key ?> class="<?php if ($currentPage == $key){echo 'active';}?>"><?= $value ?></a></li>
-                                <?php } ?>
-                                <button type="button" class="button-custom m-1">Connection</button>
-                            </ul>
+        <div class="backg-opacity">
+            <div>
+                <header>
+                    
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <img src="assets/logo.png" alt="logo du garage">
+                            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                    
+                            <div class="navbar-collapse collapse" id="navbarsExample09">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <?php foreach ($mainMenu as $key => $value) { ?>
+                                        <li class="m-2"><a href=<?= $key ?>><?= $value ?></a></li>
+                                    <?php } ?>
+                                    <button type="button" class="button-custom m-1">Connection</button>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </nav>
-            </header>
-
-                
-
+                    </nav>
+                </header>
+                <div class="line"></div>

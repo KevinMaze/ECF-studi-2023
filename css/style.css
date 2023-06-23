@@ -28,6 +28,7 @@
   transition: 0.5s ease-in;
 }
 
+
 /*** BODY GENERAL ***/
 body {
   font-family: var(--main-font-title);
@@ -40,13 +41,54 @@ body {
   flex-direction: column;
 }
 
-a {
+html{
+  scroll-behavior: smooth;
+}
+
+a, a:visited {
+  cursor: pointer;
+  position: relative;
   color: var(--main-link-color);
+  text-decoration: none;
   font-weight: bold;
+  transition: 0,1s linear;
+}
+
+a::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: var(--main-link-color);
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+}
+
+a:hover{
+  transform: scale(1.04);
+}
+
+a:hover::after {
+  animation: animLink 1.4s infinite ease-in-out;
+}
+@keyframes animLink {
+  50% {
+    transform: scaleX(0.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 .backg-opacity{
   background-color: rgba(0, 0, 0, 0.6)
+}
+
+.line{
+  height: 2px;
+  width: 70%;
+  margin: 0 auto;
+  background-color: var(--main-other-color);
 }
 
 /*** HEADER ***/
@@ -84,6 +126,12 @@ section h1, h2{
 .section__service__img{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   width: 100%;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.section__service__img:hover{
+  filter: grayscale(10%);
 }
 
 /*** OCCASION.PHP ***/
@@ -93,20 +141,27 @@ section h1, h2{
   margin-top: 1em;
 }
 
-/*** CARROUSEL INDEX ***/
-.carrousel{
+.section-occasion{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em
+}
+
+/*** SECTION CARD ***/
+.section__card__decoration{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 18em;
+}
+
+.section__card{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin: 1em;
 }
-
-/*** SECTION CARD ***/
-.section__card__decoration{
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
 
 
 /*** FOOTER ***/
@@ -145,12 +200,9 @@ footer li{
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .carrousel{
+  .section-occasion{
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .section__card__decoration{
-    flex-grow: 1;
   }
 }
 
